@@ -21,7 +21,7 @@
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
-    <body class="antialiased bg-white">        
+    <body class="antialiased bg-blue-50">        
     
         <div class="min-h-screen">
             <nav>

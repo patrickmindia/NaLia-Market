@@ -1,4 +1,12 @@
-<div class="w-full bg-gray-200 border-b shadow-sm py-4">
+<div 
+    class="w-full bg-gray-200 border-b shadow-sm py-4"
+        x-data="scrollToReveal()" 
+        x-ref="navbar"
+        x-on:scroll.window="scroll()"
+        x-bind:class="{
+                        'sticky top-0': sticky,
+                        'relative': !sticky
+                        }">
 
     <div class="flex flex-row items-center justify-between mx-auto container">
 
