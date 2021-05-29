@@ -14,28 +14,30 @@
                     <!-- component -->
                       <main class="grid min-h-screen">
                       <div>
-                        <section class="grid grid-cols-1 sm:grid-cols-4 gap-3">
+                        <div class="p-3 mb-3 bg-gray-200 text-gray-700 font-medium flex flex-row items-center justify-between">
+                          <p class="text-3xl">Produits les plus récents</p> 
+                          <span>
+                            <a class="flex flex-row items-center justify-between" href="#">
+                              <p >Voir plus</p>
+                              <span>+</span>
+                            </a>
+                            
+                          </span>
+                        </div>
+                        <section class="grid grid-cols-1 sm:grid-cols-4 gap-3 px-4">
                           <!-- CARD 1 -->
-                            <div x-data="{subCard:true}" class="relative rounded-sm shadow-lg cursor-pointer overflow-hidden">
+                            <div class="relative rounded-sm shadow-lg cursor-pointer overflow-hidden">
                                 <img class="w-full md:w-72 h-80 block" src="https://upload.wikimedia.org/wikipedia/en/f/f1/Tycho_-_Epoch.jpg" alt="" />
                                 <span class="absolute top-0 flex flex-row text-white text-xs gap-1 p-2">
-                                  <span class="p-1 bg-orange-200 bg-opacity-50 text-orange-100 shadow-sm hover:opacity-100  hover:bg-orange-600">#products</span> <span class="p-1 hover:bg-orange-200 hover:text-orange-600">#vetements</span>
+                                  <a href="#" class="p-1 text-orange-100 shadow-sm hover:opacity-100  hover:bg-orange-200 hover:text-red-600">#products</a> <a href="#" class="p-1 hover:bg-orange-200 hover:text-orange-600">#vetements</a>
                                 </span>
-                                <div class="block absolute top-60 pb-2 bg-gray-200 bg-opacity-80 transform"
-                                    @mouse.enter="subCard=true"
-                                    x-show="subCard" 
-                                    x-transition:enter="transform translate-y-40"
-                                    x-transition:enter-start="opacity-0 transform scale-90"
-                                    x-transition:enter-end="opacity-100 transform scale-100"
-                                    x-transition:leave="transition ease-in duration-300"
-                                    x-transition:leave-start="opacity-100 transform scale-100"
-                                    x-transition:leave-end="opacity-0 transform scale-90">
+                                <div class="block absolute top-60 pb-2 bg-gray-200 bg-opacity-80 transform">
                                   <div class="relative max-h-full top-0  flex flex-col transition justify-evenly">
                                       
-                                      <h6 class="text-2xl text-gray-50 font-bold bg-orange-400 px-3 py-2">CDF 450,00</h6>
+                                      <h6 class="text-2xl text-gray-50 font-medium bg-orange-400 px-3 py-2">CDF 450,00</h6>
                                       <div class="px-3 mt-1">
                                         <p class="uppercase font-semibold">Lorem ipsum dolor sit</p>
-                                        <p class="text-sm leading-none mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque velit nulla non nam qui quas vel architecto ab. Dicta, illo.</p>
+                                        <p class="text-xs leading-none mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque velit nulla non nam qui quas vel architecto ab. Dicta, illo.</p>
                                       </div>
                                           
                                     
@@ -88,7 +90,7 @@
                                       <h6 class="text-2xl text-gray-50 font-bold bg-orange-400 px-3 py-2">CDF 450,00</h6>
                                       <div class="px-3 mt-1">
                                         <p class="uppercase font-semibold">Lorem ipsum dolor sit</p>
-                                        <p class="text-sm leading-none mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque velit nulla non nam qui quas vel architecto ab. Dicta, illo.</p>
+                                        <p class="text-xs leading-none mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque velit nulla non nam qui quas vel architecto ab. Dicta, illo.</p>
                                       </div>
                                           
                                     
@@ -96,7 +98,7 @@
                                   <div class="flex flex-row px-3 mt-2 items-center justify-between">
 
                                       
-                                      <div class="flex flex-row items-center gap-3">
+                                      <div class="flex flex-row items-center gap-1">
                                           <button class="group rounded-full p-1 hover:bg-blue-300 text-white transform translate-y-3 hover:translate-y-3">
 
                                               <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 stroke-current text-gray-700 group-hover:text-gray-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -142,7 +144,7 @@
                                       <h6 class="text-2xl text-gray-50 font-bold bg-orange-400 px-3 py-2">CDF 450,00</h6>
                                       <div class="px-3 mt-1">
                                         <p class="uppercase font-semibold">Lorem ipsum dolor sit</p>
-                                        <p class="text-sm leading-none mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque velit nulla non nam qui quas vel architecto ab. Dicta, illo.</p>
+                                        <p class="text-xs leading-none mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque velit nulla non nam qui quas vel architecto ab. Dicta, illo.</p>
                                       </div>
                                           
                                     
@@ -197,7 +199,7 @@
                                       <h6 class="text-2xl text-gray-50 font-bold bg-orange-400 px-3 py-2">CDF 450,00</h6>
                                       <div class="px-3 mt-1">
                                         <p class="uppercase font-semibold">Lorem ipsum dolor sit</p>
-                                        <p class="text-sm leading-none mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque velit nulla non nam qui quas vel architecto ab. Dicta, illo.</p>
+                                        <p class="text-xs leading-none mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque velit nulla non nam qui quas vel architecto ab. Dicta, illo.</p>
                                       </div>
                                           
                                     
@@ -205,7 +207,7 @@
                                   <div class="flex flex-row px-3 mt-2 items-center justify-between">
 
                                       
-                                      <div class="flex flex-row items-center gap-3">
+                                      <div class="flex flex-row items-center gap-1">
                                           <button class="group rounded-full p-1 hover:bg-blue-300 text-white transform translate-y-3 hover:translate-y-3">
 
                                               <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 stroke-current text-gray-700 group-hover:text-gray-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
