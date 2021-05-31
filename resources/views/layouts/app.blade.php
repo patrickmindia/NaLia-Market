@@ -13,10 +13,10 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        @notifyCss
 
         @livewireStyles
 
-        @notifyCss
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
@@ -46,8 +46,12 @@
 
         @stack('modals')
 
-        @notifyJs
+        
 
         @livewireScripts
+        
+        @notifyJs
+        
+        <x:notify-messages />
     </body>
 </html>

@@ -168,6 +168,7 @@ return [
 
         Mckenziearts\Notify\LaravelNotifyServiceProvider::class,
 
+
         /*
          * Application Service Providers...
          */

@@ -18,7 +18,7 @@
                           <p class="text-3xl">Produits les plus récents</p> 
                           <span>
                             <a class="flex flex-row items-center justify-between" href="#">
-                              <p >Voir plus</p>
+                              <p >Voir tout</p>
                               <span>+</span>
                             </a>
                             
