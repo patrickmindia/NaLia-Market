@@ -21,7 +21,7 @@
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
-    <body class="antialiased bg-blue-50">        
+    <body class="antialiased bg-gray-200">        
     
         <div class="min-h-screen">
             <nav>
@@ -29,11 +29,11 @@
             </nav>
         
 
-            <div class="flex flex-row antialiased min-h-screen mt-10 mx-auto container">
+            <div class="flex flex-row antialiased min-h-screen my-10 mx-auto container">
                 <div class="md:block w-1/4">
                     @include('layouts.partials.sidebar')
                 </div>
-                <div class="md:w-3/4">
+                <div class="md:w-3/4 p-3 bg-white rounded-lg shadow-md overflow-hidden">
                     @yield('content')
                 </div>
             </div>
