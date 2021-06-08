@@ -29,7 +29,7 @@
             </nav>
         
 
-            <div class="flex flex-row antialiased min-h-screen my-10 mx-auto container">
+            <div class="flex flex-row antialiased min-h-screen my-10 mx-auto container gap-5">
                 <div class="md:block w-1/4">
                     @include('layouts.partials.sidebar')
                 </div>

@@ -32,9 +32,9 @@ module.exports = {
     variants: {
         extend: {
             opacity: ['disabled'],
+            translate: ['active', 'group-hover'],
         },
         
-        translate: ['active', 'group-hover'],
     },
 
     plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
