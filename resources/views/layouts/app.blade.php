@@ -29,14 +29,14 @@
             </nav>
 
 
-            <div class="flex flex-row antialiased min-h-screen my-10 mx-auto container gap-5">
+            <main class="flex flex-row antialiased my-10 mx-auto container gap-5">
                 <div class="md:block w-1/6">
                     @include('layouts.partials.sidebar')
                 </div>
                 <div class="md:w-5/6">
                     @yield('content')
                 </div>
-            </div>
+            </main>
 
             <footer>
                 @include('layouts.partials.footer')

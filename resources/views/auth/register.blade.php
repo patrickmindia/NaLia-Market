@@ -4,16 +4,16 @@
 @section('content')
 
 <div class="relative flex items-top justify-center dark:bg-gray-900 sm:items-center sm:pt-0">
-    <div class="w-2/4 bg-orange-400">
-    
-        <x-jet-authentication-card> 
+    <div class="bg-local bg-cover bg-center w-2/4" style="background-image: url(images/background/auth-bg-03.svg)">
+
+        <x-jet-authentication-card>
             <x-slot name="title">
                     <div class="mb-8">
 
                         <h2 class="mb-3 uppercase text-2xl font-semibold">Créer son compte</h2>
                         <p class="uppercase text-sm">Créer votre propre compte pour utiliser les services offerts d'achats d'habits stylés et conserver les informations sur toutes vos activités sur notre plateforme</p>
                     </div>
-                    
+
             </x-slot>
 
             <x-jet-validation-errors class="mb-4" />
@@ -69,9 +69,9 @@
                 </div>
             </form>
         </x-jet-authentication-card>
-    
+
     </div>
-    
+
 
     <div class="w-2/4"></div>
 
@@ -80,4 +80,4 @@
 
 @endsection
 
-    
+

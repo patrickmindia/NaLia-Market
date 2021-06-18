@@ -25,13 +25,18 @@
 
     </div>
 
-    <div class=" w-5/12 mt-10 container mx-auto px-6 py-16 bg-white rounded-md shadow-md">
+    <div class="w-5/6 mt-3 px-6 py-3 bg-white rounded-md shadow-md">
 
         <div class="categories w-full mt-8">
 
             @livewire('index-categories')
 
         </div>
+
+    </div>
+
+    <div class="w-5/6 mt-3 px-6 py-3 bg-white rounded-md shadow-md">
+
 
         <div class="most-viewed mt-8 ">
 

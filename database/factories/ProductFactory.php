@@ -22,10 +22,27 @@ class ProductFactory extends Factory
      */
     public function definition()
     {
+        $r_image = rand(0, 9);
+
+        $image = [
+            '/images/products/image_1.jpg',
+            '/images/products/image_2.jpg',
+            '/images/products/image_3.jpg',
+            '/images/products/image_4.jpg',
+            '/images/products/image_5.jpg',
+            '/images/products/image_6.jpg',
+            '/images/products/image_7.jpg',
+            '/images/products/image_8.jpg',
+            '/images/products/image_9.jpg',
+            '/images/products/image_10.jpg',
+        ];
+
         return [
             'name' => $this->faker->words(3, true),
+            'image'=> $image [$r_image],
             'price' => $this->faker->numberBetween(10000, 200000),
-            'description' => $this->faker->sentence(10, true)
+            'description' => $this->faker->paragraphs(5, true),
+            'manufactor'=>$this-> faker-> company()
         ];
     }
 }

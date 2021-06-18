@@ -5,20 +5,20 @@
 
         <div class="w-2/4"></div>
 
-        <div class="w-2/4 bg-orange-400">
-        
+        <div class="bg-local w-2/4" style="background-image: url(images/background/auth-bg-01.svg)">
+
             <div class="">
                 <x-jet-authentication-card>
 
-                <x-slot name="title">
-                    <div class="mb-8">
+                    <x-slot name="title">
+                        <div class="mb-8">
 
-                        <h2 class="mb-3 uppercase text-2xl font-semibold">Se connecter</h2>
-                        <p class="uppercase text-sm">Connectez-vous à votre compte pour accéder à tous les services offerts dans votre plateforme et aux informations vous concernant si vous êtes déjà enregistrés</p>
-                    </div>
-                    
-                </x-slot>
-                
+                            <h2 class="mb-3 uppercase text-2xl font-semibold">Se connecter</h2>
+                            <p class="uppercase text-sm">Connectez-vous à votre compte pour accéder à tous les services offerts dans votre plateforme et aux informations vous concernant si vous êtes déjà enregistrés</p>
+                        </div>
+
+                    </x-slot>
+
                     <x-jet-validation-errors class="mb-4" />
 
                     @if (session('status'))
@@ -60,12 +60,12 @@
                         </div>
                     </form>
                 </x-jet-authentication-card>
-            
+
             </div>
         </div>
-        
-        
+
+
 
     </div>
 @endsection
-    
+
