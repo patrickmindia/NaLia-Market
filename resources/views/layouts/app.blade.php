@@ -21,15 +21,15 @@
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
-    <body class="antialiased bg-gray-200">
+    <body class="antialiased bg-gray-200 box-border">
 
-        <div class="min-h-screen">
+        <div class="">
             <nav>
                 @include('layouts.partials.navbar')
             </nav>
 
 
-            <main class="flex flex-row antialiased my-10 mx-auto container gap-5">
+            <main class="min-h-screen flex flex-row antialiased my-10 mx-auto container gap-5">
                 <div class="md:block w-1/6">
                     @include('layouts.partials.sidebar')
                 </div>

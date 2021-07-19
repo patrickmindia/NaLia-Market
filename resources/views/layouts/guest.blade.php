@@ -10,7 +10,7 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        
+
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
@@ -27,26 +27,26 @@
             <nav>
                 @include('layouts.partials.navbar')
             </nav>
-        
+
 
             <div class="antialiased min-h-screen">
-                
+
                 <div class="">
                     @yield('content')
                 </div>
-                
+
             </div>
-            
+
             <footer>
                 @include('layouts.partials.footer')
             </footer>
-            
+
         </div>
 
         @notifyJs
 
         @livewireScripts
-          
+
     </body>
 
 </html>

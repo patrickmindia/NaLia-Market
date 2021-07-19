@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     use HasFactory;
+
+    // public function presentPrice()
+    // {
+    //     return 'CDF' . ' ' . number_format((($this->price) / 100), 2, ',', ' ');
+    // }
+
+
 }
